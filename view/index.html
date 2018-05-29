@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>loadAnimate</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+</head>
+<body>
+    <ul id="case" class="case">
+        <li class="item">fadeInLeft</li>
+        <li class="item">fadeInUp</li>
+        <li class="item">fadeIn</li>
+        <li class="item">fadeInDown</li>
+        <li class="item">fadeInRight</li>
+    </ul>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/loadAnimate.js"></script>
+    <script>
+        $(function(){
+            $('#case .item:eq(0)').loadAnimate({type: 'fadeInLeft',delay: '0s',LOADNUM: 1});
+            $('#case .item:eq(1)').loadAnimate({type: 'fadeInUp',delay: '0s',LOADNUM: 1});
+            $('#case .item:eq(2)').loadAnimate({type: 'fadeIn',delay: '0s',LOADNUM: 1});
+            $('#case .item:eq(3)').loadAnimate({type: 'fadeInDown',delay: '0s',LOADNUM: 1});
+            $('#case .item:eq(4)').loadAnimate({type: 'fadeInRight',delay: '0s',LOADNUM: 1});
+        })
+    </script>
+</body>
+</html>

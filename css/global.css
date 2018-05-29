@@ -1,0 +1,14 @@
+.case{
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+.case .item{
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    margin: 50px auto;
+    border: #000 1px solid;
+    margin: 50px;
+    list-style: none;
+}
